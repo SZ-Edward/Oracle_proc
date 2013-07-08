@@ -6,14 +6,14 @@ create or replace procedure ETL_4A_APP_OPERATION_COLLECT(
 ) is
 
   --临时变量
-  v_province_code        char(3);  --省代码
+  v_province_code        char(3);            --省代码
   v_month_tmp            varchar2(8) := '';  --汇总月份
-  v_begin_time           date;  --统计起始时间
-  v_end_time             date;  --统计截止时间
-  v_foura_login_value    number;  --4A侧登陆数量
-  v_foura_op_value       number;  --4A侧操作数量
-  v_app_login_value      number;  --CRM登陆数量
-  v_app_op_value         number;  --CRM侧操作数量
+  v_begin_time           date;               --统计起始时间
+  v_end_time             date;               --统计截止时间
+  v_foura_login_value    number;             --4A侧登陆数量
+  v_foura_op_value       number;             --4A侧操作数量
+  v_app_login_value      number;             --CRM登陆数量
+  v_app_op_value         number;             --CRM侧操作数量
   
   type cursor_op_collect is ref cursor;
   v_cursor_op_collect cursor_op_collect;

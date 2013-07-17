@@ -4,7 +4,7 @@ import java.util.Map;
 /**
  * 
  *  @Description: 用反射机制取Map里面键对应的值赋给VO
- *	@author: aurora
+ *  @author: aurora
  *  @date: 2012-5-30 下午04:15:08
  */
 public class ObjectTool {
